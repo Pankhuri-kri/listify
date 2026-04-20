@@ -1,58 +1,135 @@
-# OnLine-eXchange.com
+# 🛒 Listify – MERN Marketplace Application
 
+A full-stack marketplace web application built using the MERN stack that enables users to buy and sell second-hand products with real-time communication and bidding features.
 
-### OnLine-eXchange?
-<p>OnLine-eXchange is an online second-hand market, where users can sell, buy, and add bids on products, users can filter sort and search for products according to their needs.</p>
-For building this application we used Following Tech Stack:
-<ul>
-<li>Redux</li>
-<li>React</li>
-<li>Ant Design</li>
-<li>Tailwind-css</li>
-<li>Nodejs</li>
-<li>Expressjs</li>
-<li>MongoDB</li>
-<li>JWT</li>
-<li>JavaScript</li>
+---
 
-</ul>
+## 🚀 Overview
 
-### Features
-<ul>
-<li>User Sign-in/Sign-Up page</li>
-<li> Search, Filter, Sort, pagination, notification.</li>
-<li>add delete edit products, add bids</li>
-<li>Responsive Project</li>
-<li>Admin have full control over the user as well as products</li>
-</ul>
+**Listify** is a modern peer-to-peer marketplace platform inspired by OLX.
+It allows users to list products, browse listings, place bids, and communicate with sellers in real time.
 
-### Screenshot 
-<ol>
-<li>Home page</li>
+This project demonstrates a complete full-stack implementation with authentication, real-time features, and admin-level controls.
 
-<div margin="auto" justifyContent="center" ><img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*25E0ngBadkKZQ5am-aIZQQ.png"/></div>
+---
 
-<li>Blog Page</li>
+## ✨ Features
 
-<div margin="auto" justifyContent="center"><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*8G52rpt21q1yA6JzqtJU8A.png"/></div>
+* 🔐 Secure Authentication (JWT + bcrypt)
+* 🛍️ Product Listing with Image Upload
+* 🔎 Advanced Search & Filtering (category, price, usage)
+* 💬 Real-Time Chat System (Socket.IO)
+* 💸 Bidding System for products
+* 🔔 Notification System
+* 🧑‍💼 Admin Dashboard (manage users, products, broadcasts)
+* 📱 Responsive UI (Tailwind CSS + Ant Design)
 
-<li>about Page</li>
+---
 
-<div margin="auto" justifyContent="center"><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*cPx9b5XL633QnlhVJfR7gA.png"/></div>
+## 🛠️ Tech Stack
 
-<li>Signup and login Page</li>
+### Frontend
 
-<div margin="auto" justifyContent="center"><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*ErpBR3RYWtC9boSFkpCBAw.png"/></div>
-<div margin="auto" justifyContent="center"><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*Fn00YrcpAqd2Kg1HxrVbLQ.png"/></div>
+* React.js
+* Redux
+* Tailwind CSS
+* Ant Design
 
-<li> Dairy Page</li>
+### Backend
 
-<div margin="auto" justifyContent="center"><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*EVPWUv-Mpto59p1iJSPSQw.png"/></div>
+* Node.js
+* Express.js
+* MongoDB (Mongoose)
+* Socket.IO
 
-</ol>
+### Other Tools
 
- 
-<ul>
-<li>Swapnil Ramteke</li>
-</ul>
+* Axios
+* JWT Authentication
+* bcrypt
+* dotenv
 
+---
+
+## 📂 Project Structure
+
+```
+listify/
+│
+├── client/        # React frontend
+├── server/        # Node.js backend
+├── README.md
+└── .gitignore
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Pankhuri-kri/listify.git
+cd listify
+```
+
+### 2. Install dependencies
+
+```bash
+cd client
+npm install
+
+cd ../server
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file inside the **server** folder:
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+### 4. Run the application
+
+```bash
+# Start backend
+cd server
+npm start
+
+# Start frontend
+cd client
+npm start
+```
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots here (home page, chat, admin dashboard, etc.)
+
+---
+
+## 🔮 Future Improvements
+
+* Image compression before storage
+* Seller rating & review system
+* Email notifications
+* Payment integration
+
+---
+
+## 👩‍💻 Author
+
+**Pankhuri Kumari**
+Full Stack Developer (MERN)
+
+This project was independently designed and developed as a complete full-stack application to demonstrate real-world marketplace functionality.
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
