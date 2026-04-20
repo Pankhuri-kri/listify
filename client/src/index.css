@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px;
+}
+
+Input, select, textarea {
+  min-height: 38px !important;
+  border: 1.5px solid #E5E7EB !important;
+  border-radius: 8px !important;
+  width: 100%;
+  transition: border-color 0.2s !important;
+}
+
+Input:focus, select:focus, textarea:focus {
+  outline: none !important;
+  border: 1.5px solid #4F46E5 !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1) !important;
+}
+
+button {
+  height: 40px !important;
+  box-shadow: none !important;
+}
+
+table {
+  border: #E5E7EB 1px solid !important;
+  border-radius: 12px !important;
+}
+
+/* Ant Design overrides */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #4F46E5 !important;
+}
+.ant-tabs-ink-bar {
+  background: #4F46E5 !important;
+}
+.ant-btn-primary {
+  background: #4F46E5 !important;
+  border-color: #4F46E5 !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #4F46E5 !important;
+  border-color: #4F46E5 !important;
+}
+
+.max-width {
+  max-width: max-content !important;
+}
